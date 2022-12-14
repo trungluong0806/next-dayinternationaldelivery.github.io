@@ -201,7 +201,7 @@
     justify-content: space-between;
     font-size: 14px;
     margin-left: 2%;
-    /* margin-top: 2%; */
+    margin-top: 2%; 
     width:100%;
     height: 20%;
     
@@ -216,14 +216,10 @@
     margin-top: 2%;
 
 }
-.Username{
-    margin-top: 2%; 
-    
-}
+
 
 .comm{
     margin-right: 10%;
-    margin-top: 2%; 
 
 }
 
