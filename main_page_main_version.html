@@ -13,7 +13,7 @@
                             <button id="menu_button" type="button">Account Management</button>
                         </div>
                         <div class="menu_button">
-                            <button id="menu_button" type="button">Message Box</button> 
+                            <button id="menu_button" type="button" onclick="openchat()">Message Box</button> 
                         </div>
                         <div class="menu_button">
                             <a href="request_form.html"><button id="menu_button" type="button">Start Request</button></a>
@@ -100,12 +100,12 @@
                             <div class="message_content">
                                 <h2>Open a chatbox with this user?</h2>
                                 <div style="margin-top: 10%; margin-left: 10%;" class="Y_N">
-                                    <form action="">
+                                    
 
-                                        <button class="Y_or_N" style="width: 50px ;" type="submit" onclick="Close()"> Yes</button>
-                                        <button class="Y_or_N" style="width: 50px ;" type="submit" onclick="Close()"> No</button>
+                                        <button class="Y_or_N" style="width: 50px ;" type="button" onclick="Close();openchat()" > Yes</button>
+                                        <button class="Y_or_N" style="width: 50px ;" type="button" onclick="Close()"> No</button>
                                 
-                                    </form>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -199,6 +199,14 @@
                             <div class="notis">You have just received a new rating. Click here to view</div>
                         </div>
                     </div>
+
+                    <div class="chat" id="chatbox">
+                        <div class="participant">User1908</div>
+                        <div class="chat_content"></div>
+                        <div class="input_field">
+                            <input style="font-size: 12px; width: 90%; padding-top: 15px; padding-bottom:10px; border: none;" type= "text" name="chats" id="chats" placeholder=" input your messages here:">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,5 +219,13 @@
                 popup.classList.add("close_message_box")            
             }
         </script>
+        <script>
+            let chat_display = document.getElementById("chatbox");
+            function openchat(){
+                chat_display.classList.add("open_chat");
+            }
+        </script>
+
+        
     </body>
 </html>
