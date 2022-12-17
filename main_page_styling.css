@@ -159,6 +159,16 @@
 }
 
 
+.filter_content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    
+}
+
+
 
 .top{
     width: 100%;
