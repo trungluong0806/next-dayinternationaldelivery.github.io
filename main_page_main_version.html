@@ -242,6 +242,21 @@
                             <input style="font-size: 12px; width: 90%; padding-top: 15px; padding-bottom:10px; border: none;" type= "text" name="chats" id="chats" placeholder=" input your messages here:">
                         </div>
                     </div>
+
+                    <div class="price_box">
+                        <div class="box_title">Please input your agreed upon price</div>
+                        <div class="price_input_field">
+                            <label style="color: white; text-shadow: 2px 2px 2px black;" for="Price">Price: &nbsp;</label>
+                            <input style="width: 80px;" type="text" name="Price" id="Price">
+                        </div>
+                        <div class="continue">
+                            <a href="https://www.paypal.com/vn/home" target="_blank"><button id="C_or_R" type="button" onclick="close_price_box()">Continue</button></a>
+                            <button id="C_or_R" type="button" onclick="close_price_box()"> Return</button>
+
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -258,6 +273,16 @@
             let chat_display = document.getElementById("chatbox");
             function openchat(){
                 chat_display.classList.add("open_chat");
+            }
+        </script>
+
+          <script>
+            let price_box_display = document.getElementById("price_box")
+            function open_price_box(){
+                price_box_display.classList.add("open_price");
+            }
+            function close_price_box(){
+                price_box_display.classList.add("close_price");
             }
         </script>
 
