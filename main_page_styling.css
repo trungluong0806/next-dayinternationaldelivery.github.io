@@ -388,7 +388,8 @@ h2 {
     top: 30%;
     left: 40%;
     background-color: rgb(105, 102, 102);
-    visibility: visible;
+    visibility: hidden;
+
 }
 
 .box_title{
@@ -434,4 +435,4 @@ h2 {
 
 .close_price{
     visibility: hidden;
-}
+} 
