@@ -362,3 +362,21 @@ h2 {
 .open_chat{
     visibility: visible;
 }
+
+
+.message{
+    margin-top: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#message{
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #14557B,
+    #7FCEC5); 
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
