@@ -59,6 +59,19 @@ html {
     justify-content: space-around;
 }
 
+.column-item_sidebar-one{
+    visibility: hidden;
+}
+.next_line_of_text{
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    top: 190px;
+    background-color: white;
+    visibility: visible;
+}
+
+
 .column-item {
     padding: 0 10px;
 }
@@ -106,6 +119,17 @@ html {
 	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
 }
 
+.btn_next{
+    width: 50px;
+}
+.btn_submit:disabled{
+    border: 1px solid #999999;
+  background-color: #d3d3d3;
+  color: #666666;
+  border-radius: 5px;
+  height: 18px;
+
+}
 @keyframes animate {
 	0% {
 		opacity: 0;
