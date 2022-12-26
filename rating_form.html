@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+ <html lang="en">
+   <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Rating form</title>
+        <link rel="stylesheet" href="rating_form.css" type="text/css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div class="background">
+            <!--Nav-->
+            <div class="nav">
+                <ul class="nav-list">
+                        <div class="nav-item__button">
+                            <a href="main_page_main_version.html">Home</a>
+                        </div>
+                        <div class="nav-item__button">
+                            <a href="request_form.html">Request</a>
+                        </div>
+                    
+                   
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item__button nav-item--strong">Sign up</li>
+                    <li class="nav-item__button nav-item--strong">Sign in</li>
+                </ul>
+            </div>
+
+            <!--Column layout-->
+            <div class="column-layout">
+                <div class="column-item sidebar-one">
+                    <p>Your words matter</p>
+                    <h2>We would love to hear <br> about your experience!</h2>
+                </div>
+                <div class="column-item siderbar-two">
+                    <!--Form layout-->
+                    <div class="form container">
+                        <form action="" class="form">
+                            <div class="form__row">
+                                <label class="form__label" for="full__name">Full Name</label>
+                                <input class="form__input" type="text" name="" id="">
+                            </div>
+                            <div class="form__row">
+                                <label class="form__label" for="Email">Email</label>
+                                <input class="form__input" type="text" name="" id="">
+                            </div>
+                            <div class="form__row">
+                                <label class="form__label" for="Review Title">Review Title</label>
+                                <input class="form__input" type="text" name="" id="">
+                            </div>
+                            <div>
+                                <textarea name="opinion" cols="30" rows="5" placeholder="Write feedback..."></textarea>
+                            </div>
+                    </form>
+                    <div class="wrapper">
+                        <form action="#">
+                            <div class="rating">
+                                <input type="number" name="rating" hidden>
+                                <i class='bx bx-star star' style="--i: 0;"></i>
+                                <i class='bx bx-star star' style="--i: 1;"></i>
+                                <i class='bx bx-star star' style="--i: 2;"></i>
+                                <i class='bx bx-star star' style="--i: 3;"></i>
+                                <i class='bx bx-star star' style="--i: 4;"></i>
+                            </div>
+                            <div class="btn-group">
+                                <button type="submit" class="btn submit">Submit</button>
+                                <button class="btn cancel">Cancel</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+        <script src="rating-form-script.js"></script>
+           
+
+    </body>
+ </html>
