@@ -31,21 +31,27 @@
 
             <!--Column layout-->
             <div class="column-layout">
-                <div class="column-item sidebar-one">
-                    <p>Your words matter</p>
-                    <h2>We would love to hear <br> about your experience!</h2>
+                <div class="column-item_sidebar-one">
+                    <div>
+                        <h2>In terms of timeliness, <br> how would you rate your proxy?</h2>
+                    </div>
+                    <div class="next_line_of_text">
+                        <h2>In terms of item handling, <br> How would you rate your proxy?</h2>
+                    </div>
+                    
                 </div>
+                
                 <div class="column-item siderbar-two">
                     <!--Form layout-->
                     <div class="form container">
                         <form action="" class="form">
                             <div class="form__row">
-                                <label class="form__label" for="full__name">Full Name</label>
-                                <input class="form__input" type="text" name="" id="">
+                                <label class="form__label" for="your_id">Your Id</label>
+                                <input class="form__input" type="text" name="your_id" id="your_id" required>
                             </div>
                             <div class="form__row">
-                                <label class="form__label" for="Email">Email</label>
-                                <input class="form__input" type="text" name="" id="">
+                                <label class="form__label" for="proxy_id">Proxy's id</label>
+                                <input class="form__input" type="text" name=""proxy_id id="proxy_id" required>
                             </div>
                             <div class="form__row">
                                 <label class="form__label" for="Review Title">Review Title</label>
@@ -58,7 +64,7 @@
                     <div class="wrapper">
                         <form action="#">
                             <div class="rating">
-                                <input type="number" name="rating" hidden>
+                                <input type="number" name="rating" hidden required>
                                 <i class='bx bx-star star' style="--i: 0;"></i>
                                 <i class='bx bx-star star' style="--i: 1;"></i>
                                 <i class='bx bx-star star' style="--i: 2;"></i>
@@ -66,8 +72,8 @@
                                 <i class='bx bx-star star' style="--i: 4;"></i>
                             </div>
                             <div class="btn-group">
-                                <button type="submit" class="btn submit">Submit</button>
-                                <button class="btn cancel">Cancel</button>
+                                <button type="submit" class="btn_submit" disabled>Submit</button>
+                                <button class="btn_next" >Next</button>
                             </div>
                             </div>
                         </form>
