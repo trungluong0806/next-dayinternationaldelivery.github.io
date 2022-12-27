@@ -66,9 +66,21 @@ html {
     position: absolute;
     width: 350px;
     height: 100px;
-    top: 190px;
+    top: 30%;
+    left: 15%;
+    background-color: white;
+    visibility: hidden;
+}
+
+.timeliness_prompt{
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    top: 30%;
+    left: 15%;
     background-color: white;
     visibility: visible;
+
 }
 
 
@@ -103,21 +115,48 @@ html {
 	box-shadow: var(--shadow);
 
 }
-.rating {
+.time_rating{
 	display: flex;
 	align-items: center;
 	grid-gap: .5rem;
 	font-size: 2rem;
 	color: var(--yellow);
 	margin-bottom: 0.5rem;
+    position: absolute;
+    top: 48%;
+    visibility: visible;
 }
-.rating .star {
+
+
+.time_rating .star {
 	cursor: pointer;
 }
-.rating .star.active {
+.time_rating .star.active {
 	opacity: 0;
 	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
 }
+
+.item_rating{
+	display: flex;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: var(--yellow);
+	margin-bottom: 0.5rem;
+    position: absolute;
+    top: 48%;
+    visibility: hidden;
+}
+
+
+.item_rating .star {
+	cursor: pointer;
+}
+.item_rating .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
 
 .btn_next{
     width: 50px;
@@ -130,6 +169,13 @@ html {
   height: 18px;
 
 }
+
+.btn-group{
+    position: absolute;
+    top: 55%;
+}
+
+
 @keyframes animate {
 	0% {
 		opacity: 0;
@@ -227,5 +273,13 @@ html {
     font-size: 20px;
     color: rgb(0, 0, 0, 0.3);
     cursor: pointer;
+}
+
+.hiding_form{
+    visibility: hidden;
+}
+
+.viewing_form{
+    visibility: visible;
 }
 
