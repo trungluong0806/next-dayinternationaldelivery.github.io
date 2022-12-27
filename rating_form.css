@@ -123,7 +123,7 @@ html {
 	color: var(--yellow);
 	margin-bottom: 0.5rem;
     position: absolute;
-    top: 46%;
+    top: 47%;
     visibility: visible;
 }
 
@@ -144,7 +144,7 @@ html {
 	color: var(--yellow);
 	margin-bottom: 0.5rem;
     position: absolute;
-    top: 46%;
+    top: 47%;
     visibility: hidden;
 }
 
@@ -160,6 +160,9 @@ html {
 
 .btn_next{
     width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    width: 70px;
 }
 .btn_submit:disabled{
     border: 1px solid #999999;
@@ -168,6 +171,11 @@ html {
   border-radius: 5px;
   height: 18px;
 
+}
+.btn_submit{
+    border-radius: 5px;
+    height: 20px;
+    width: 70px;
 }
 
 .btn-group{
