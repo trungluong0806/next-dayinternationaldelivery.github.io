@@ -32,10 +32,10 @@
             <!--Column layout-->
             <div class="column-layout">
                 <div class="column-item_sidebar-one">
-                    <div>
+                    <div class="timeliness_prompt" id="timeliness_box">
                         <h2>In terms of timeliness, <br> how would you rate your proxy?</h2>
                     </div>
-                    <div class="next_line_of_text">
+                    <div class="next_line_of_text" id="item_handling_box">
                         <h2>In terms of item handling, <br> How would you rate your proxy?</h2>
                     </div>
                     
@@ -63,17 +63,27 @@
                     </form>
                     <div class="wrapper">
                         <form action="#">
-                            <div class="rating">
-                                <input type="number" name="rating" hidden required>
+                            <div class="time_rating" id="timeliness_rating">
+                                <input type="number" name="time_rating" hidden required>
                                 <i class='bx bx-star star' style="--i: 0;"></i>
                                 <i class='bx bx-star star' style="--i: 1;"></i>
                                 <i class='bx bx-star star' style="--i: 2;"></i>
                                 <i class='bx bx-star star' style="--i: 3;"></i>
                                 <i class='bx bx-star star' style="--i: 4;"></i>
                             </div>
+
+                            <div class="item_rating" id="item_handling_rating">
+                                <input type="number" name="item_rating" hidden required>
+                                <i class='bx bx-star star' style="--i: 0;"></i>
+                                <i class='bx bx-star star' style="--i: 1;"></i>
+                                <i class='bx bx-star star' style="--i: 2;"></i>
+                                <i class='bx bx-star star' style="--i: 3;"></i>
+                                <i class='bx bx-star star' style="--i: 4;"></i>
+                            </div>
+
                             <div class="btn-group">
                                 <button type="submit" class="btn_submit" disabled>Submit</button>
-                                <button class="btn_next" >Next</button>
+                                <button class="btn_next" onclick="hiding_timeliness(); opening_item_handling(); closing_timeliness_rating(); viewing_item_rating()">Next</button>
                             </div>
                             </div>
                         </form>
@@ -82,6 +92,26 @@
         </div>
 
         <script src="rating-form-script.js"></script>
+        <script>
+            let timeliness_prompt_box = document.getElementById("timeliness_box");
+            let rating_timeliness = document.getElementById("timeliness_rating");
+            let rating_item_handling = document.getElementById("item_handling_rating");
+            let item_handling_prompt_box = document.getElementById("item_handling_box");
+            function hiding_timeliness(){
+                timeliness_prompt_box.classList.add("hiding_form");
+                
+            }
+            function closing_timeliness_rating(){
+                rating_timeliness.classList.add("hiding_form");
+            }
+            function viewing_item_rating(){
+                rating_item_handling.classList.add("viewing_form");
+            }
+           
+            function opening_item_handling(){
+                item_handling_prompt_box.classList.add("viewing_form");
+            }
+        </script>
            
 
     </body>
