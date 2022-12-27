@@ -123,7 +123,7 @@ html {
 	color: var(--yellow);
 	margin-bottom: 0.5rem;
     position: absolute;
-    top: 48%;
+    top: 46%;
     visibility: visible;
 }
 
@@ -172,7 +172,7 @@ html {
 
 .btn-group{
     position: absolute;
-    top: 55%;
+    top: 52%;
 }
 
 
