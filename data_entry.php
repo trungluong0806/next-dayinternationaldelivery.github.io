@@ -9,7 +9,7 @@
     $country_code = $_POST['Country_Code'];
     $Mobile = $_POST['Country_Code'].$_POST['number'];
     $Gender = $_POST['Gender'];
-    $connection = new mysqli('127.0.0.1','root','','24h_international delivery');
+    $connection = new mysqli('127.0.0.1','root','','24h_international_delivery');
     if ($connection->connect_error){
         die('Connection Failed : '.$connection->connect_error);}
     else {
