@@ -11,6 +11,8 @@
 
 <body>
     <div class="background">
+        <div class="navigation">
+        </div>
         <div class="box">
             <h1 class="Title">Registration</h1>
             <form action="data_entry.php" method="POST">
