@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="rating form" content="rating form">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="log-in.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="background">
+            <div class="navigator">
+                
+                <div class="language">
+                    <label style="font-family: 'Times New Roman', Times, serif; font-size: 18px;" for="language">Ngôn Ngữ:</label>
+                    <select name="language_selector"  onchange="location=this.value">
+                        <option value="log-in.html" >EN</option>
+                        <option value="log-in-vn.html" selected>VN</option>
+                        <option value="log-in-jp.html" >JAP</option>
+                        
+                    </select>
+                </div>
+                <div class="sign_up_prompt"> Không có tài khoản? <a style="font-size: 16px;" href="customer_registration_form.php">đăng ký</a></div>
+            </div>
+            <form action="">
+                <div class="main_containter">
+                    <div class="title">
+                        <h2>Đăng Nhập</h2>
+                    </div>
+                    <div class="fields">
+                        <div class="label">
+                            <div class="Username">
+                                <label style="margin-left: 10px;" for="Username">Tài Khoản</label>
+                            </div>
+                            <div class="Password">
+                                <label style="margin-left: 10px;" for="Password">Mật Khẩu</label>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="Username">
+                                <input style="color: black; text-shadow: none; width: 100%;" type="text" id="Username" name="Username" required placeholder="Tên tài khoản của bạn">
+                            </div>
+                            <div class="Password">
+                                <input style="color: black; text-shadow: none; width: 100%;" type="Password" name="Password" id="Password" required placeholder="Mật khẩu">
+                            </div>
+                            
+                            <div class="forgotten">
+                                <a href="">Quên Mật Khẩu?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_box">
+                        <input id="button" type="submit" value="Đăng Nhập">
+                    </div>
+                </div>
+            </form>
