@@ -1,104 +1,76 @@
 <!DOCTYPE html>
-
- <html lang="en">
-   <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Rating form</title>
-        <link rel="stylesheet" href="rating_form.css" type="text/css">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="rating form" content="rating form">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="rating_form.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
-
     <body>
         <div class="background">
-            <!--Nav-->
-            <div class="nav">
-                <ul class="nav-list">
-                        <div class="nav-item__button">
-                            <a href="main_page_main_version.html">Home</a>
-                        </div>
-                        <div class="nav-item__button">
-                            <a href="request_form.html">Request</a>
-                        </div>
-
-                <ul class="nav-list">   
-                    <div class="logo">
-                        <div class="start_request nav-item__button nav-item__position">
-                            <a href="rating_form_VNversion.html"><img src="Flag_of_Vietnam.svg.png" width="10%" height="35px"></a>
-                            <a href="rating_form_JPversion.html"><img src="japan-flag-png-xl.png.jpeg" width="10%" height="35px"></a>
-                            <a href="rating_form.html"><img src="flag-400.png" width="10%" height="35px"></a>                                 </div>
-                        </div>
-                </ul> 
-                   
-                </ul>
-                <ul class="nav-list">
-                    <li class="nav-item__button nav-item--strong">Sign up</li>
-                    <li class="nav-item__button nav-item--strong">Sign in</li>
-                </ul>
-            </div>
-
-            <!--Column layout-->
-            <div class="column-layout">
-                <div class="column-item_sidebar-one">
-                    <div class="timeliness_prompt" id="timeliness_box">
-                        <h2>In terms of timeliness, <br> how would you rate your proxy?</h2>
-                    </div>
-                    <div class="next_line_of_text" id="item_handling_box">
-                        <h2>In terms of item handling, <br> How would you rate your proxy?</h2>
-                    </div>
-                    
+            <div class="navigator">
+                <div class="language">
+                    <label style="font-family: 'Times New Roman', Times, serif; font-size: 18px;" for="language">Lang:</label>
+                    <select name="language_selector"  onchange="location=this.value">
+                        <option value="rating_form.html" selected>EN</option>
+                        <option value="rating_form_VNversion.html">VN</option>
+                        <option value="rating_form_JPversion.html">JAP</option>
+                        
+                    </select>
                 </div>
-                
-                <div class="column-item siderbar-two">
-                    <!--Form layout-->
-                    <div class="form container">
-                        <form action="" class="form">
-                            <div class="form__row">
-                                <label class="form__label" for="your_id">Your Id</label>
-                                <input class="form__input" type="text" name="your_id" id="your_id" required>
-                            </div>
-                            <div class="form__row">
-                                <label class="form__label" for="proxy_id">Proxy's id</label>
-                                <input class="form__input" type="text" name=""proxy_id id="proxy_id" required>
-                            </div>
-                            <div class="form__row">
-                                <label class="form__label" for="Review Title">Review Title</label>
-                                <input class="form__input" type="text" name="" id="">
-                            </div>
-                            <div>
-                                <textarea name="opinion" cols="30" rows="5" placeholder="Write feedback..."></textarea>
-                            </div>
-
-                            <div class="wrapper">
-                                <form action="">
-                                    <div class="time_rating" id="timeliness_rating">
-                                        <input type="number" name="time_rating" id="time_rating" hidden required>
-                                        <i class='bx bx-star star' style="--i: 0;"></i>
-                                        <i class='bx bx-star star' style="--i: 1;"></i>
-                                        <i class='bx bx-star star' style="--i: 2;"></i>
-                                        <i class='bx bx-star star' style="--i: 3;"></i>
-                                        <i class='bx bx-star star' style="--i: 4;"></i>
+            </div>
+            <div class="main_container">
+                <div class="column_left" id="timeliness">
+                    <div class="prompt">
+                        <h2>
+                            In terms of timeliness,
+                            <br>
+                            How do you rate your proxy?
+                        </h2>
+                    </div>
+                </div>
+                <div class="column_left_2" id="item_handling">
+                    <div class="prompt">
+                        <h2>
+                            In terms of how your item was handled,
+                            <br>
+                            How do you rate your proxy?
+                        </h2>
+                    </div>
+                </div> 
+                <form action="">
+                    <div class="column_right">
+                        <div class="data_box" id="personal_info">
+                            <div class="innerbox" id="account_info">
+                                <div class="label_box">
+                                    <div class="lab_1">
+                                        <label for="Your_Id">Your ID: &nbsp;</label>
                                     </div>
-        
-                                    <div class="item_rating" id="item_handling_rating">
-                                        <input type="number" name="item_rating" id="item_rating" hidden required>
-                                        <i class='bx bx-star star' style="--i: 0;"></i>
-                                        <i class='bx bx-star star' style="--i: 1;"></i>
-                                        <i class='bx bx-star star' style="--i: 2;"></i>
-                                        <i class='bx bx-star star' style="--i: 3;"></i>
-                                        <i class='bx bx-star star' style="--i: 4;"></i>
+                                    <div class="lab_2">
+                                        <label for="Proxy_ID">Proxy's ID: &nbsp;</label>
                                     </div>
-        
-                                    <div class="btn-group">
-                                        <input type="submit" value="Submit" class="btn_submit" id="submit_button" disabled>
-                                        <button class="btn_next" onclick="hiding_timeliness(); opening_item_handling(); closing_timeliness_rating(); viewing_item_rating(); enabling_submit()">Next</button>
+                                </div>
+                                <div class="input_box">
+                                    <div class="lab_1">
+                                        <input style="border-radius: 2px;" type="text" name="Your_ID" id="Your_ID" required>
                                     </div>
+                                    <div class="lab_2">
+                                        <input style="border-radius: 4px;" type="text" name="Proxy_ID" id="Proxy_ID" required>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="innerbox" id="Comment" style="position: relative;">
+                                <div style="position: relative; left: 2%; top: 3%;">
+                                    <textarea name="opinion"  placeholder="Write feedback..." style="padding-right: 62%; padding-bottom: 18%; border-radius: 5px; text-shadow: none;"></textarea>
+                                   
+                                </div>
                             
-                        </form>
-                    <!-- <div class="wrapper">
-                        <form action="">
-                            <div class="time_rating" id="timeliness_rating">
+                            </div>
+                        </div>
+
+                        <div class="data_box_star" >
+                            <div class="time_rating" id="star_rating">
                                 <input type="number" name="time_rating" id="time_rating" hidden required>
                                 <i class='bx bx-star star' style="--i: 0;"></i>
                                 <i class='bx bx-star star' style="--i: 1;"></i>
@@ -106,8 +78,8 @@
                                 <i class='bx bx-star star' style="--i: 3;"></i>
                                 <i class='bx bx-star star' style="--i: 4;"></i>
                             </div>
-
-                            <div class="item_rating" id="item_handling_rating">
+                           
+                            <div id="ratingitem" class="item_rating">
                                 <input type="number" name="item_rating" id="item_rating" hidden required>
                                 <i class='bx bx-star star' style="--i: 0;"></i>
                                 <i class='bx bx-star star' style="--i: 1;"></i>
@@ -115,44 +87,40 @@
                                 <i class='bx bx-star star' style="--i: 3;"></i>
                                 <i class='bx bx-star star' style="--i: 4;"></i>
                             </div>
+    
+                            <div class="button_box">
+                                <button type="button" id="next" onclick="switch_prompt()">Next</button>
+                                <input id="submit" type="submit" value="Submit">
+                                <button id="Back" type="button" onclick="return_prompt()">Back</button>
+                            </div>
+                       
+                            
+                        </div>
 
-                            <div class="btn-group">
-                                <input type="submit" value="Submit" class="btn_submit" id="submit_button" disabled>
-                                <button class="btn_next" onclick="hiding_timeliness(); opening_item_handling(); closing_timeliness_rating(); viewing_item_rating(); enabling_submit()">Next</button>
-                            </div>
-                            </div>
-                        </form> -->
+
+
+                    </div>
+
+                </form>
                     
+                     
             </div>
+               
         </div>
-
-        <script src="rating-form-script.js"></script>
+        <script src="rating-form-script 2.js"></script> 
         <script>
-            let timeliness_prompt_box = document.getElementById("timeliness_box");
-            let rating_timeliness = document.getElementById("timeliness_rating");
-            let rating_item_handling = document.getElementById("item_handling_rating");
-            let item_handling_prompt_box = document.getElementById("item_handling_box");
-            let submit_enabling = document.getElementById("submit_button")
-            function hiding_timeliness(){
-                timeliness_prompt_box.classList.add("hiding_form");
-                
+            let timeliness_prompt = document.getElementById("timeliness")
+            let item_handling_prompt = document.getElementById("item_handling")
+            let timeliness_rating_var = document.getElementById("star_rating")
+            let var_item = document.getElementById("ratingitem")
+            function switch_prompt(){
+                timeliness_prompt.classList.add("disappear");
+                item_handling_prompt.classList.add("appear");
+                timeliness_rating_var.classList.add("disappear");
+                var_item.classList.add("appear");
             }
-            function closing_timeliness_rating(){
-                rating_timeliness.classList.add("hiding_form");
-            }
-            function viewing_item_rating(){
-                rating_item_handling.classList.add("viewing_form");
-            }
-           
-            function opening_item_handling(){
-                item_handling_prompt_box.classList.add("viewing_form");
-            }
-            function enabling_submit(){
-                submit_enabling.disabled =false
-            }
-            
         </script>
-           
-
     </body>
- </html>
+   
+</html>
+       
