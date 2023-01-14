@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../cssdir/main_page_styling.css" type="text/css">
+    <body>
+        <div class="background">
+            <div class="main_box">
+                <div class="left_navigator">
+                    <div class="menu">
+                        <div class="menu_button">
+                            <a href="rating_form_VNversion.html"> <button id="menu_button" type="button">Đánh Giá</button></a>
+                        </div>
+                        <div class="menu_button">
+                            <button id="menu_button" type="button" onclick="openchat()">Hộp Thư</button> 
+                        </div>
+                        <div class="menu_button">
+                            <a href="request_form.html"><button id="menu_button" type="button">Uỷ thác</button></a>
+                        </div>
+                        <div class="menu_button">
+                            <button id="menu_button" type="button">Hải Quan</button>
+                        </div>
+                        <div class="menu_button">
+                            <button id="menu_button" type="button">Cài Đặt</button>
+                        </div>
+
+                    </div>
+                    <hr style="width: 80%; margin-left: 10%;">
+                    <div class="filter">
+                        <div class="icon">Bộ Lọc</div>
+                        <div class="filter_menu">
+                            <div class="filter_button">
+                                <button id="filter" type="button">Nước Nhận</button>
+                            </div>
+
+                            <div class="filter_content">
+                                <label for="Destination">Đến</label>
+                                <select name="Destination" id="Destination">
+                                    <option value="Vietnam">Việt Nam</option>
+                                    <option value="USA">Mỹ</option>
+                                    <option value="UK">Anh</option>
+                                    <option value="Japan">Nhật</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter_button">
+                                <button id="filter" type="button">Nước Mua </button>
+                            </div>
+
+                            <div class="filter_content">
+                                <label for="Destination">Từ</label>
+                                <select name="Destination" id="Destination">
+                                    <option value="Vietnam">Việt Nam</option>
+                                    <option value="USA">Mỹ</option>
+                                    <option value="UK">Anh</option>
+                                    <option value="Japan">Nhật</option>
+                                </select>
+                            </div>
+
+                            <div class="filter_button">
+                                <button  id="filter" type="button">Ngày Nhận</button>
+                            </div>
+
+                            <div class="filter_content">
+                                <label for="Date">Ngày</label>
+                                <input type="date" name="Date" id="Date">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="main_content">
+                    <div class="top">
+                        <div class="logo"></div>
+                        <div class="start_request">
+                            <a href="main_page_main_version Vietnamese.html"><img src="../imagedir/Flag_of_Vietnam.svg.png" width="10%" height="35%"></a>
+                            <a href="main_page_main_version japan.html"><img src="../imagedir/japan-flag-png-xl.png.jpeg" width="10%" height="35%"></a>
+                            <a href="main_page_main_version.html"><img src="../imagedir/flag-400.png" width="10%" height="35%"></a> 
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="request_diplay">
+                            <div style="padding-top: 5%;">
+                                <p>ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit laudantium vitae in commodi voluptates incidunt dignissimos, ducimus ex nobis ipsum, voluptatum quis, officiis a. Pariatur corrupti harum illo est?</p>
+                                <br> 
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate totam repellendus dicta iure exercitationem dolorum architecto vitae esse in officia eveniet nulla aut, sed at fugit incidunt obcaecati nobis! Ad.</p>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis asperiores enim ad iusto. Possimus odit nesciunt placeat, autem suscipit cupiditate architecto nam asperiores quo molestias laboriosam ea repellat? Voluptatem!</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <form action="" method="POST">
+                                <div class = "comment_trigger"><input style="width: 80%; margin-left: 2%; border-radius: 45px; padding: 1%; margin-top:2%;" type="text" name="comm" id="comm" placeholder="Nhập comment của bạn: "></div>
+                                <hr style="width: 90%; margin-left: 2%; margin-top: 2%;">
+                            </form>
+                            <div class="comment_section">
+                                
+                                <div class="comments_display">
+                                    <div class="Username">User1908</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 20 USD. Flight depart: 24/12/2022 </button></div>
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User2987</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 22 USD. Flight depart: 25/12/2022 </button></div>
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User1913</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 19 USD. Flight depart: 30/12/2022 </button></div>
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User5678</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 18.5 USD. Flight depart: 01/01/2023 </button></div> 
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User5678</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 18.5 USD. Flight depart: 01/01/2023 </button></div> 
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User5678</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 18.5 USD. Flight depart: 01/01/2023 </button></div> 
+                                </div>
+                            </div>
+                      
+                        </div>
+
+                        <div class="message_container" id="messagebox">
+                            <div class="message_title">Thông báo!</div>
+                            <div class="message_content">
+                                <h2>Mở đối thoại với người này?</h2>
+                                <div style="margin-top: 10%; margin-left: 10%;" class="Y_N">
+                                    
+
+                                        <button class="Y_or_N" style="width: 50px ;" type="button" onclick="Close();openchat()" > Yes</button>
+                                        <button class="Y_or_N" style="width: 50px ;" type="button" onclick="Close()"> No</button>
+                                
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="request_diplay">
+                            <div style="padding-top: 5%;">
+                                <p>ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit laudantium vitae in commodi voluptates incidunt dignissimos, ducimus ex nobis ipsum, voluptatum quis, officiis a. Pariatur corrupti harum illo est?</p>
+                                <br> 
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate totam repellendus dicta iure exercitationem dolorum architecto vitae esse in officia eveniet nulla aut, sed at fugit incidunt obcaecati nobis! Ad.</p>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis asperiores enim ad iusto. Possimus odit nesciunt placeat, autem suscipit cupiditate architecto nam asperiores quo molestias laboriosam ea repellat? Voluptatem!</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <form action="" method="POST">
+                                <div class = "comment_trigger"><input style="width: 80%; margin-left: 2%; border-radius: 45px; padding: 1%; margin-top:2%;" type="text" name="comm" id="comm" placeholder="Nhập comment của bạn: "></div>
+                                <hr style="width: 90%; margin-left: 2%; margin-top: 2%;">
+                            </form>
+                            <div class="comment_section">
+                                
+                                <div class="comments_display">
+                                    <div class="Username">User1908</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 20 USD. Flight depart: 24/12/2022 </button></div>
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User2987</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 22 USD. Flight depart: 25/12/2022 </button></div>
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User1913</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 19 USD. Flight depart: 30/12/2022 </button></div>
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User5678</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 18.5 USD. Flight depart: 01/01/2023 </button></div> 
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User5678</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 18.5 USD. Flight depart: 01/01/2023 </button></div> 
+                                </div>
+                                <div class="comments_display">
+                                    <div class="Username">User5678</div>
+                                    <div class="comm"><button id="comment" type="submit" onclick="Displaying_message_box()">Price: 18.5 USD. Flight depart: 01/01/2023 </button></div> 
+                                </div>
+                            </div>
+                      
+                        </div>
+                    </div>
+
+                       
+                        <!-- <div class="comment">
+                            
+                            <divc class="comment_section">
+                               
+                                
+                            </div>
+                            </div> -->
+                            
+                        <!-- <div class="request_diplay">
+                            <div style="padding-top: 5%;">
+                                <p>ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit laudantium vitae in commodi voluptates incidunt dignissimos, ducimus ex nobis ipsum, voluptatum quis, officiis a. Pariatur corrupti harum illo est?</p>
+                                <br> 
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate totam repellendus dicta iure exercitationem dolorum architecto vitae esse in officia eveniet nulla aut, sed at fugit incidunt obcaecati nobis! Ad.</p>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis asperiores enim ad iusto. Possimus odit nesciunt placeat, autem suscipit cupiditate architecto nam asperiores quo molestias laboriosam ea repellat? Voluptatem!</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <form action="" method="POST">
+                                
+                            </form>
+                            <div class="comments_display">
+                               
+                                
+                                
+                                  
+                             </div>
+                            
+                        </div> -->
+
+
+                </div>
+                <div class="right_navigator">
+                    <div class="Noti">
+                        <div class="noti_icon">Thông báo</div>
+                        <div class="notifications">
+                            <div class="notis">User1098 has placed a comment in your request</div>
+                            <div class="notis">User 2098 has placed a comment in your request</div>
+                            <div class="notis">User 3045 has placed a comment in your request</div>
+                            <div class="notis"> Request 1098 has been completed. </div>
+                            <div class="notis">You have just received a new rating. Click here to view</div>
+                        </div>
+                    </div>
+
+                    <div class="chat" id="chatbox">
+                        <div class="participant">User1908</div>
+                        <div class="chat_content">
+                            <div class="message">
+                                <button id="message" type="button"> Bấm vào đây để thanh toán</button>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <input style="font-size: 12px; width: 90%; padding-top: 15px; padding-bottom:10px; border: none;" type= "text" name="chats" id="chats" placeholder=" nhập tin nhắn:">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let popup = document.getElementById("messagebox");
+            function Displaying_message_box(){
+                popup.classList.add("open_message_box");
+            }
+            function Close(){
+                popup.classList.add("close_message_box")            
+            }
+        </script>
+        <script>
+            let chat_display = document.getElementById("chatbox");
+            function openchat(){
+                chat_display.classList.add("open_chat");
+            }
+        </script>
+
+        
+    </body>
+</html>
