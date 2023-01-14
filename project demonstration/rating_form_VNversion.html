@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="rating form" content="rating form">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../cssdir/rating_form.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="background">
+            <div class="navigator">
+                <div class="language">
+                    <label style="font-family: 'Times New Roman', Times, serif; font-size: 18px;" for="language">Ngôn Ngữ:</label>
+                    <select name="language_selector"  onchange="location=this.value">
+                        <option value="rating_form.html">EN</option>
+                        <option value="rating_form_VNversion.html" selected>VN</option>
+                        <option value="rating_form_JPversion.html">JAP</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="column_left" id="timeliness">
+                    <div class="prompt">
+                        <h2>
+                            Về mặt giờ giấc,
+                            <br>
+                            Bạn đánh giá người vận chuyển thế nào?
+                        </h2>
+                    </div>
+                </div>
+                <div class="column_left_2" id="item_handling">
+                    <div class="prompt">
+                        <h2>
+                            Đơn hàng của bạn
+                            <br>
+                            Có được vận chuyển cẩn thận không?
+                        </h2>
+                    </div>
+                </div> 
+                <form action="">
+                    <div class="column_right">
+                        <div class="data_box" id="personal_info">
+                            <div class="innerbox" id="account_info">
+                                <div class="label_box">
+                                    <div class="lab_1">
+                                        <label for="Your_Id">Mã số ID: &nbsp;</label>
+                                    </div>
+                                    <div class="lab_2">
+                                        <label for="Proxy_ID">Mã số ID: &nbsp; </label>
+                                    </div>
+                                </div>
+                                <div class="input_box">
+                                    <div class="lab_1">
+                                        <input style="border-radius: 2px;" type="text" name="Your_ID" id="Your_ID" placeholder="ID của bạn" required>
+                                    </div>
+                                    <div class="lab_2">
+                                        <input style="border-radius: 4px;" type="text" name="Proxy_ID" id="Proxy_ID" placeholder="ID người vận chuyển" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="innerbox" id="Comment" style="position: relative;">
+                                <div style="position: relative; left: 2%;">
+                                    <textarea name="opinion"  placeholder="Nhận xét..." style="padding-right: 62%; padding-bottom: 18%; border-radius: 5px; text-shadow: none;  color: black;"></textarea>
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                        <div class="data_box_star" >
+                            <div class="time_rating" id="star_rating">
+                                <input type="number" name="time_rating" id="time_rating" hidden required>
+                                <i class='bx bx-star star' style="--i: 0;"></i>
+                                <i class='bx bx-star star' style="--i: 1;"></i>
+                                <i class='bx bx-star star' style="--i: 2;"></i>
+                                <i class='bx bx-star star' style="--i: 3;"></i>
+                                <i class='bx bx-star star' style="--i: 4;"></i>
+                            </div>
+                           
+                            <div id="ratingitem" class="item_rating">
+                                <input type="number" name="item_rating" id="item_rating" hidden required>
+                                <i class='bx bx-star star' style="--i: 0;"></i>
+                                <i class='bx bx-star star' style="--i: 1;"></i>
+                                <i class='bx bx-star star' style="--i: 2;"></i>
+                                <i class='bx bx-star star' style="--i: 3;"></i>
+                                <i class='bx bx-star star' style="--i: 4;"></i>
+                            </div>
+    
+                            <div class="button_box">
+                                <button type="button" id="next" onclick="switch_prompt()">Next</button>
+                                <input id="submit" type="submit" value="Submit">
+                                <button id="Back" type="button">Back</button>
+                            </div>
+                       
+                            
+                        </div>
+
+
+
+                    </div>
+
+                </form>
+                    
+                     
+            </div>
+               
+        </div>
+        <script src="rating-form-script.js"></script> 
+        <script>
+            let timeliness_prompt = document.getElementById("timeliness")
+            let item_handling_prompt = document.getElementById("item_handling")
+            let timeliness_rating_var = document.getElementById("star_rating")
+            let var_item = document.getElementById("ratingitem")
+            function switch_prompt(){
+                timeliness_prompt.classList.add("disappear");
+                item_handling_prompt.classList.add("appear");
+                timeliness_rating_var.classList.add("disappear");
+                var_item.classList.add("appear");
+            }
+        </script>
+    </body>
+   
+</html>
